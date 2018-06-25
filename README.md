@@ -5,8 +5,8 @@ Example Usage:
 ```
 sudo docker run -d \
   --name dehydrated \
-  --mount 'type=bind,src=/gluster/data/dehydrated_config/,dst=/etc/dehydrated' \
-  --mount 'type=bind,src=/gluster/data/dehydrated_data/,dst=/data' \
+  --mount 'type=bind,src=dehydrated_config/,dst=/etc/dehydrated' \
+  --mount 'type=bind,src=dehydrated_data/,dst=/data' \
   --no-resolve-image \
 tringler/rpi-dehydrated
 ```
